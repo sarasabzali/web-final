@@ -248,7 +248,7 @@ table{
     border: rgb(150, 126, 238) thick;
     font-size: 50px;
     height: 20px;
-    width: 77%;
+    width: 70%;
     margin-bottom: 5%;
     
 }
@@ -284,12 +284,17 @@ table{
     color: rgb(38, 6, 88);
 }
 
-
+.single-footer h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 /* foooter */
 .footer-wrapper {
     width: 1100px;
     margin: 0 auto;
     text-align: center;
+    
 
 }
 .single-footer {
@@ -297,6 +302,7 @@ table{
     float: left;
     text-align: left;
     color: rgb(255, 255, 255);
+    
     
 
 }
@@ -307,12 +313,17 @@ table{
     
 
 }
+.single-footer ul li {
+    display: flex;
+    justify-content:space-evenly;
+}
 .single-footer ul a {
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 12px;
-    display: block;
+    
+    
    
 }
 .single-footer p{
@@ -325,7 +336,7 @@ footer {
     /* position: absolute; */
     bottom: -250px;
     z-index: 1;
-    background-color: rgb(107, 140, 231);
+    background-color: rgb(58, 58, 58);
 }
 .footer-bottom {
     background: rgb(53, 52, 52);
@@ -338,12 +349,87 @@ footer {
    left: 0px;
    padding-top: 20px;
    position: fixed;
+   
    /*  */
   
 
 }  
 .footer-section {
     flex: 1;
-    padding: 25px;
+   
     /* border:1px solid white; */
+}
+
+
+
+.withbg {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.icons {
+   
+    position: fixed;
+    top: 30%;
+    left: 0%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+}
+.icons a {
+    margin: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    border-radius: 0px 50px 50px 0px ;
+    transform: translate(-130px, 0px);
+    transition: all 0.7s;
+
+}
+.icons a:hover 
+{
+    transform: translate(0px, 0px);
+
+}
+
+.icons a i {
+    margin-left: 25px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: all 0.5s;
+
+}
+.icons a:hover i {
+    transform: rotate(360deg);
+
+}
+.icons  a  i.fab fa-facebook-f {
+    color:  #2c80d3;
+}
+.icons  a  i.fab fa-youtube {
+    color:  #fa0910;
+}
+.icons  a  i.fab fa-twitter-square{
+    color:  #53c5ff;
+}
+
+.face {
+    background-color: #2c80d3;
+    color: white;
+}
+.you {
+    background-color: #fa0910;
+    color: white;
+}
+.twt {
+    background-color: #53c5ff;
+    color: white;
 }

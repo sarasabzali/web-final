@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+    background-color: grey;
+    opacity: .9;
+    overflow-x:hidden;
+    padding-top: 60px;
+    transition: 0.8s;
+}
+.nav a {
+    display: block;
+    padding: 20px 30px;
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+}
+.nav a:hover {
+    color: rgb(59, 59, 59);
+    transition: 0.4s;
+}
+.nav .close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.slide a {
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+}
+#cont {
+    padding: 40px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    width: 100%;
+    background:linear-gradient(to right, #B06AB3, #4568DC);
+    
+}
+/* stop */
+body{
+    background-color: white;
+    height: 100vh;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    /* background-color: rgb(92, 90, 228); */
+    background: #4568DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#logo{
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+
+#h1-{
+    float: left;
+    line-height: 100px;
+    text-shadow:2px 2px palevioletred;
+    padding: 0 15px;
+}
+#pic{
+    height: 100%;
+    /* border-radius: 50%; */
+}
+nav{
+width: 78%;
+float: right;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    margin-left: 70px;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav a:hover {
+    color: #000;
+    height: 70%;
+    width: 70%;
+}
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    pointer-events: fill;
+    top: 0px;
+    width: 0%;
+    transition: all ease-in-out 300ms;  
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+/* box */
+ body {
+   
+    justify-content: center;
+    align-items: center;
+     height: 100vh; 
+ }
+.cont1 {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.card {
+    max-width: 450px;
+    background: rgb(142, 123, 226);
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+}
+.imgBX {
+    max-width: 150px;
+    flex: 0 0 150px;
+
+}
+.imgBX img {
+    max-width: 100%;
+    
+}
+.cont2 {
+    margin-left: 20px;
+}
+
+
+/* animation */
+*{
+    margin: 0;
+    padding: 0%;
+}
+.animat-area {
+    background: linear-gradient(to left, #4568DC,  #B06AB3);
+    /* background: linear-gradient(to left, #8943a8, #ba382f); */
+    width: 100%;
+    height: 100vh;
+    
+}
+.box-area {
+    position: absolute;
+    /* top: 0; */
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255,255,255,0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+
+}
+.box-area li:nth-child(1){
+    left: 86%;
+    width: 80%;
+    height: 80px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+    animation-duration: 5s;
+}
+.box-area li:nth-child(4){
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+.box-area li:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 4s;
+}
+.box-area li:nth-child(6){
+    left: 15%;
+    width: 140px;
+    height: 140px;
+    animation-delay: 3.5s;
+    animation-duration: 5s;
+}
+.box-area li:nth-child(7){
+    left: 20%;
+    width: 20%;
+    height: 20px;
+    animation-delay: 1.5s;
+    animation-duration: 5s;
+}
+
+@keyframes animate{
+0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+}
+100%{
+    transform: translateY(-800px) rotate(360deg);
+    opacity:0 ;
+
+}
+
+}
+
+/* nav bar */
+body{
+    background-color: white;
+    height: 100vh;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    /* background-color: rgb(92, 90, 228); */
+    background: #4568DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#logo{
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+
+#h1-{
+    float: left;
+    line-height: 100px;
+    text-shadow:2px 2px palevioletred;
+    padding: 0 15px;
+}
+#pic{
+    height: 100%;
+    /* border-radius: 50%; */
+}
+nav{
+width: 78%;
+float: right;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    margin-left: 70px;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav a:hover {
+    color: #000;
+    height: 70%;
+    width: 70%;
+}
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    pointer-events: fill;
+    top: 0px;
+    width: 0%;
+    transition: all ease-in-out 300ms;  
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+
+/* loading */
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #4568DC,  #B06AB3);
+    /* overflow: hidden; */
+    
+
+}
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+
+}
+
+/*fooooooter */
+
+
+/* pie */
+*{
+    padding: 0;
+    margin: 0;
+}
+.chart {
+    margin: 200px auto;
+    width: 600px;
+    height: 200px;
+
+}
+
+.para {
+    display:inline-flex;
+    padding-left: 200px;
+    /* background-color: white; */
+    background: linear-gradient(to left, #4568DC,  #B06AB3);
+}
+.para2 {
+    display: flex;
+}

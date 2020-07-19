@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل دخول</title>
+    <link rel="stylesheet" href="./form2.css">
+    <link rel="stylesheet" href="./alllllllll.css">
+    <link rel="icon" href="./pic0.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+    <div id="overlay">
+        <div class="spinner"></div>
+        </div>
+    <header>
+        <span >
+            <!-- <h1 id="h1-">رد الجميل</h1> -->
+            <img src="./logogog.png" id="pic">
+        </span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./home.html"><svg width="30%" height="30%" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                        <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                      </svg></a>
+                </li>
+                <li>
+                    <a href="./form.html">التسجيل</a>
+                </li>
+                <li>
+                    <a href="./youtube.html">الكورس</a>
+                </li>
+                <li>
+                    <a href="./test.html">استبيان</a>
+                </li>
+                <li>
+                    <a href="./digram.html">التقييم</a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <div id="cont">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+        </a>
+        <a href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2 3a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3zm6 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 11.825 10.623 11 8 11s-4.146.826-5 1.755V13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"/>
+          </svg>خطوات التسجيل</a>
+        <a href="./form.html">تسجيل الدخول</a>
+        <a href="./youtube.html">الكورس</a>
+        <a href="./test.html">استبيان</a>
+        </div>
+    </div>
+    <!-- animation -->
+
+
+    <div class="animat-area">
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        
+        <form id="form-user" action="./youtube.html" method="post">
+            <div class="form-box error" data-errormsg="">
+                <label for="input-first">First</label>
+                <input type="text" id="input-first" autofocus placeholder="First Name" tabindex="1"/>
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-password">Password</label>
+                <input type="password" id="input-password" required placeholder="Password" tabindex="2" />
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-email">E-mail</label>
+                <input type="email" id="input-email" required placeholder="E-mail Address" tabindex="3" />
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-age">Age</label>
+                <select id="input-age" tabindex="4">
+                    <option value="0">Under 20</option>
+                    <option value="1">20-30</option>
+                    <option value="2">30-40</option>
+                    <option value="3">40-50</option>
+                    <option value="4">Over 50</option>
+                </select>
+            </div>
+            <div class="form-box" data-errormsg="">
+                <label for="input-alive">Alive?</label>
+                <input type="checkbox" id="input-alive" value="yes" tabindex="5" checked />
+            </div>
+            <div class="form-box">
+                <button id="button-cancel">Cancel</button>
+                <button id="button-send">Send</button>
+            </div>
+        </form>
+
+        <!-- readyy -->
+        <div class="popo">
+            <h3 id="title">قوانين القبول</h3>
+            <p>
+                <ul>
+                    <li>
+                        أن يكون المتطوّعون المحليون مواطنين في دولهم، أو مقيمين قانونيين في الدولة.
+                    </li>
+                    <li>
+                        الحدّ الأدنى لسنّ المتطوعين المحليّن هو 20 عامًا.
+                    </li>
+                    <li>
+                        ان لا يواجهه المتطوع اي مشاكل صحيه او نفسيه بحيث تهدد حياته او حياه المسن.
+                    </li>
+                    <li>
+                        على جميع المتطوّعين المحلين إتقان اللغة المحلية كتابة وقراءة، كما يجب أن يكونوا قادرين على التواصل مع المسن .
+                    </li>
+                    <li>
+                        يجب أن يتمتّع المتطوعون المحليون بالالتزام بمبادئ التطوّع، وأن يحترموا روح الاختلاف . كما يجب أن يمتلكوا القدرة على التكيف مع التغيير، وفي بعض الأحيان مع ظروف المعيشة والعمل الصعبة.
+                    </li>
+                    <li>
+                        <h3>اوافق</h3>
+                        <div class="center1" style="position: absolute;">
+                            <input id="inner2" type="checkbox" value="اوافق" name="">
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- <input style="position: absolute; display: block;" type="radio">اوافق الشروط <br> -->
+            </p>
+        
+        </div>
+
+    
+        </div>
+    <!-- stop -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="single-footer">
+                <h2>موقع رد الجميل</h2>
+                <p>يوفر الفرصه لمساعدهكبار السن 
+                    و استرداد المساعده بعد فتره من الزمن
+                    بحيث يتم تسجيل ساعات المساعده عندما تسجل الدخول
+                </p>
+            </div>
+            <div class="single-footer">
+                <h2>مواقع التواصل الاجتماعي</h2>
+                <ul  id="iconss">
+                    <li>
+                        <a target="_blank" href= "img/nono.jpg">
+                            <img src="./insta.png" style="width: 20px; height: 20px;" /> </a>
+    
+                            <a target="_blank" href= "img/nono.jpg">
+                                <img src="./you.png" style="width: 20px; height: 20px;" /> </a>
+    
+                                <a target="_blank" href= "img/nono.jpg">
+                                    <img src="./twt.png" style="width: 20px; height: 20px;" /> </a>
+                    </li>
+                </ul>
+            
+            </div>
+            <div class="single-footer">
+                <div class="footer-section cont-form">
+                    <h2>contect us</h2>
+                    <br>
+                    <form action="./home.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="your email address....">
+                    <textarea name="message" class="text-input contact-input" placeholder="your message....."></textarea>
+                    <button type="submit" class="btn btn-big">
+                        <i class="fas fa-envelope"></i>
+                        send
+                    </button>
+           
+                 </form>
+                 <!-- animattion -->
+                 <div class="loader3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+    
+                 <!-- animattion -->
+            
+            </div>
+    
+          
+    
+        </div>
+        <div class="footer-bottom">
+            &copy; rad-AL-jammel.com | Designed by SARA SEBZALI
+        </div>
+    </div>
+    </footer>
+    
+
+<!-- stop -->
+
+</body>
+<script src="./script.js"></script>
+<script src="./loding.js"></script>
+<script>
+    function openSlideMenu(){
+        document.getElementById("menu").style.width = "250px";
+        document.getElementById("content").style.marginLeft = "250px";
+    }
+    function closeSlideMenu(){
+        document.getElementById("menu").style.width = "0px";
+        document.getElementById("content").style.marginLeft = "0px";
+    }
+</script>
+</html>
+
+

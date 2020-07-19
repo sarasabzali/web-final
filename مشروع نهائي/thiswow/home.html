@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+   <link rel="stylesheet" href="./home1.css">
+   <link rel="icon" href="./pic0.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- ممممممممممممممممممممممممممممممممممممممممممممممممممممممممممممممممممممممم -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['شباب',     11],
+          ['كبار السن وحيدين',      2],
+          ['كبار السن في الدار',  2],
+          ['كبار السن في المنزل', 2],
+          ['الاطفال',    7]
+        ]);
+
+        var options = {
+          title: 'نسبه كبار السن في العالم',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+
+    // stop
+    google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    
+<!-- وووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووو -->
+    
+</head>
+<body>
+    <!-- loading -->
+    <div id="overlay">
+        <div class="spinner"></div>
+        </div>
+        <!-- loading -->
+    <header>
+        <!-- id="logo" -->
+        <span >
+            <!-- <h1 id="h1-">رد الجميل</h1> -->
+            <img src="./logogog.png" id="pic">
+        </span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./home.html"><svg width="30%" height="30%" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                        <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                      </svg></a>
+                </li>
+                <li>
+                    <a href="./form.html">التسجيل</a>
+                </li>
+                <li>
+                    <a href="./youtube.html">الكورس</a>
+                </li>
+                <li>
+                    <a href="./test.html">استبيان</a>
+                </li>
+                <li>
+                    <a href="./digram.html">التقييم</a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+<!-- stop -->
+
+    <div id="cont">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+        </a>
+        <a href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2 3a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3zm6 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 11.825 10.623 11 8 11s-4.146.826-5 1.755V13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"/>
+          </svg> خطوات التسجيل </a>
+        <a href="./form.html"> تسجيل الدخول </a>
+        <a href="./youtube.html"> الكورس </a>
+        <a href="./test.html"> استبيان </a>
+        </div>
+    </div>
+<!-- stop -->
+<div class="animat-area">
+    <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div class="cont1">
+       <div class="card">
+           <div class="imgBX">
+              <img src="./pro.JPG" >
+           </div>
+          <div class="cont2">
+           <h2> من هم كبار السن</h2>
+           <p>
+               كبير السن هو من تقدّم به العمر وأصبح عجوزاً، واعتبرت منظمة الصحة العالمية أنّ مرحلة الكهولة أو الشيخوخة تبدأ من عمر الخامسة والستين فما فوق، وعادة ما يقلّ نشاط الأفراد في هذه المرحلة ويغلب على أجسامهم الضعف والوهن ويعتبرون أنفسهم غير منتجين بعد أن كانوا أساساً للعطاء وقد يظنّون بأنّهم أصبحوا عالةً على المجتمع بشكل عام وعلى أسرهم بشكل خاص، وكل هذه الأمور تنعكس سلباً على صحتهم وحالتهم النفسيّة، وتبدأ مرحلة القلق والتفكير في المستقبل وما يخبئه لهم.
+           </p>
+       </div>
+      </div>
+      <div class="card">
+       <div class="imgBX">
+          <img src="./pic2.jpg" >
+       </div>
+      <div class="cont2">
+       <h2>اثر كبار السن على المجتمع</h2>
+       <p>
+لم تحظ مشكله كبار السن باهتمام من قبل الباحثين و خصوصا قديما و ذللك لانهم لم يكن
+اجتماعيه عاليه داخل الاسرة و المجتمع ان تغير شكل المجتمع من البساطه الى التعقيد يؤدي الى عدم وجود احد 
+افراد الاسرة يهتم بخدمة كبير السن او يسهر على راحته بحكم العادات و التقاليد و اصبح لزاما بذلك ان توجد 
+المؤسسات الخاصة برعايتهم و البرامج التي تقوم بأداء الخدمات لهم و لكن مع توجه مجتمعاتنا نحو التصنيع 
+و تأثير العلم و التكنولوجيا عليه و ما بدأ يظهر من هجرة سكان الريف إلى المدن و تضخم المدينة
+       </p>
+   </div>
+   </div>
+   <div class="card">
+       <div class="imgBX">
+          <img src="./pic3.jfif" >
+       </div>
+      <div class="cont2">
+       <h2>ما الذي يحتاجه الكبير في السن؟؟</h2>
+       <p>
+           ان الرعاية الصحية و الاجتماعية العامة الجيدة امر مهم لتعزيز صحة كبار السن ووقايتهم من الامراض و معاجلة عللهم المزمنة و بالتالي فإن تدريب جميع مقدمي الخدمات الصحية على التعامل مع القضايا و الاضطرابات ذات الصلة بالشيخوخة امر مهم و ان الرعايه الصحية النفسيه الاولية على
+   المستوى المجتمعي لكبار السن امر بالغ الاهمية و التركيز على الرعاية طويلة الامد لكبار السن الذين يعانون من اضطرابات نفسيه و لابد من توفير بيئه ملائمه و داعمه تستند الى معايير حقوق الانسان.
+       </p>
+   </div>
+   </div>
+   <div class="card">
+       <div class="imgBX">
+          <img src="./pic4.jpg" >
+       </div>
+      <div class="cont2">
+       <h2>ما الذي يقدمه هذا الموقع ؟؟</h2>
+       <p>
+        هذا الموقع يوفر الفرصة لمساعده كبار السن و غيرهم ليس ماديا انا ماعدتهم نفسيا و توفير الجو الملائم له و غير ذالك يتم تسجيل ساعات المساعده التس تقدمها و المساعده من شخص الى اخلر مع الزمن
+        يقدم موقع رد الجميل الفرصه لمساعده كبار السن و غيرهم ليس ماديا انا نفسيا و اجتماعيه و هذا يبين اثر الشباب على كبار السن في هذا الوقت بالتحديد الذي يتم فيه انكار فائده كبار السن للمجتمع  فهم كانو شباب الامس و بالتالي يسمح لهم برد الجميل مع مرور فتره من الزمن
+   
+    </p>
+      </div>
+      </div>
+    </div>
+<!-- stpppppppppooooo -->
+
+<div class="popo">
+    <h2 style="color: black;">كبار السن حول العالم</h2>
+    <p id="plpl">طرأ تغير جذري على التركيبة السكانية في العالم في العقود الأخيرة. ففي الفترة ما بين عام 1950 وعام 2010، ارتفع العمر المتوقع في جميع أنحاء العالم من 46 عاما إلى 68 عاما، ويتوقع أن يزيد ليبلغ 81 عاما بحلول نهاية هذا القرن. ويجدر بالملاحظة أن عدد النساء يفوق عدد الرجال في الوقت الحالي بما يقدّر بنحو 66 مليون نسمة فيما بين السكان الذين تبلغ أعمارهم 60 سنة أو أكثر. ومن مجموع مَن بلغوا 80 سنة أو أكثر، يصل عدد النساء إلى ضِعف عدد الرجال تقريبا، ومن بين المعمّرين الذين بلغوا من العمر مائة سنة يصل عدد النساء إلى ما بين أربعة أو خمسة أضعاف عدد الرجال. وللمرة الأولى في تاريخ البشرية، سيزيد عدد الأشخاص الذين تجاوزوا الستين عن عدد الأطفال في العالم في عام 2050
+    
+        يبلغ عدد من تجاوزوا سن الـ60 عاما ما يقارب مليار إنسان. ومن المتوقع أن يزيد ذلك العدد بنسبة46 % ليصل إلى زهاء 1.4 مليار على الصعيد العالمي، مما يعني  فوق سن الـ60 عن عدد من هم تحت سن الـ10. وفي عام 2018، وللمرة الأولى في التاريخ، زاد عدد من هم فوق سين الـ65 على عدد الأطفال تحت سن الـ5 على الصعيد العالمي. كما أن من المتوقع أن يزيد عدد من هم في سن الـ80 فأكبر ثلاثة أضعاف من 143 مليونا في عام 2019 إلى 426 مليونا في 2050.
+        
+        وستكون زيادة عدد كبار السن أكثر وأسرع في بلدان العالم النامي، وستُصبح آسيا المنطقة التي تضم أكبر عدد من كبار السن، وتواجه أفريقيا أكبر زيادة متناسبة في هذا الصدد. ومع مراعاة هذا، من الواضح أنه يلزم إيلاء المزيد من الاهتمام للاحتياجات والتحديات الخاصة التي يواجهها العديد من كبار السن. بيد أن المساهمة الجوهرية التي يمكن أن يُسهم بها أغلبية كبار السن من الرجال والنساء في أعمال المجتمع إذا توفرت ضمانات كافية، تتسم بالقدر نفسه من الأهمية. وتكمن حقوق الإنسان في صميم جميع الجهود المبذولة في هذا الشأن</p></div>
+</div>
+
+
+
+<div class="para2">
+    <div id="chart_div" class="chart"></div>
+        <div id="regions_div" class="chart"></div>
+        <div id="piechart_3d"></div>
+    </div>
+</div>
+
+<div class="animat-area" style="height: 10px;">
+    <ul class="box-area"  style="height: 10px;">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+<!-- chart -->
+    <div class="para2">
+        <div id="chart_div" class="chart"></div>
+            <div id="regions_div" ></div>
+ </div>
+
+
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="footer-wrapper">
+        <div class="single-footer">
+            <h2>موقع رد الجميل</h2>
+            <p>يوفر الفرصه لمساعده كبار السن 
+                و استرداد المساعده بعد فتره من الزمن
+                بحيث يتم تسجيل ساعات المساعده عندما تسجل الدخول
+            </p>
+        </div>
+        <div class="single-footer">
+            <h2>مواقع التواصل الاجتماعي</h2>
+            <ul  id="iconss">
+                <li>
+                    <a target="_blank" href= "img/nono.jpg">
+                        <img src="./insta.png" style="width: 20px; height: 20px;" /> </a>
+
+                        <a target="_blank" href= "img/nono.jpg">
+                            <img src="./you.png" style="width: 20px; height: 20px;" /> </a>
+
+                            <a target="_blank" href= "img/nono.jpg">
+                                <img src="./twt.png" style="width: 20px; height: 20px;" /> </a>
+                </li>
+            </ul>
+        
+        </div>
+        <div class="single-footer">
+            <div class="footer-section cont-form">
+                <h2>contect us</h2>
+                <br>
+                <form action="./home.html" method="post">
+                <input type="email" name="email" class="text-input contact-input" placeholder="your email address....">
+                <textarea name="message" class="text-input contact-input" placeholder="your message....."></textarea>
+                <button type="submit" class="btn btn-big">
+                    <i class="fas fa-envelope"></i>
+                    send
+                </button>
+       
+             </form>
+             <!-- animattion -->
+             <div class="loader3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+             <!-- animattion -->
+        
+        </div>
+
+      
+
+    </div>
+    <div class="footer-bottom">
+        &copy; rad-AL-jammel.com | Designed by SARA SEBZALI
+    </div>
+</div>
+</footer>
+
+
+</body>
+<script src="./loding.js"></script>
+<script>
+    function openSlideMenu(){
+        document.getElementById("menu").style.width = "250px";
+        document.getElementById("content").style.marginLeft = "250px";
+    }
+    function closeSlideMenu(){
+        document.getElementById("menu").style.width = "0px";
+        document.getElementById("content").style.marginLeft = "0px";
+    }
+</script>
+</html>

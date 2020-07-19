@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان</title>
+    <link rel="stylesheet" href="./test.css">
+    <link rel="icon" href="./pic0.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+    <div id="overlay">
+        <div class="spinner"></div>
+        </div>
+    <header>
+        <!-- id="logo" -->
+        <span >
+            <!-- <h1 id="h1-">رد الجميل</h1> -->
+            <img src="./logogog.png" id="pic">
+        </span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./home.html"><svg width="30%" height="30%" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                        <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                      </svg></a>
+                </li>
+                <li>
+                    <a href="./form.html">التسجيل</a>
+                </li>
+                <li>
+                    <a href="./youtube.html">الكورس</a>
+                </li>
+                <li>
+                    <a href="./test.html">استبيان</a>
+                </li>
+                <li>
+                    <a href="./digram.html">التقييم</a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+    <!-- test -->
+<div class="header">
+    <h1>اختبر  كفاءتك</h1>
+    <div id="results">
+        <h2>you scored : not you attempted</h2>
+    </div>
+
+<!--  -->
+
+
+</div>
+<div class="body">
+    <form  name="quiz" onSubmit="return onSubmit()">
+    <div class="question">
+        <h1>ما الذي يحتاجه الكبير في السن؟</h1>
+        <input type="radio" name="q1" value="a">المال <br>
+        <input type="radio" name="q1" value="b">الملابس <br>
+        <input type="radio" name="q1" value="c">المساعده النفسيه <br>
+        <input type="radio" name="q1" value="d">كل ما سبق<br>
+    </div>
+    <!--  -->
+    <div class="question">
+        <h1>من آداب التعامل مع كبار السن؟</h1>
+        <input type="radio" name="q2" value="a">تطاول عليهم<br>
+        <input type="radio" name="q2" value="b">احترامهم<br>
+        <input type="radio" name="q2" value="c">نتجاهلهم<br>
+        <input type="radio" name="q2" value="d">نتركهم <br>
+    </div>
+    <div class="question">
+        <h1> ما هي  عملية الهرم والتقدم بالعمر التي تصيب الكائنات الحية نتيجة تناميها  </h1>
+        <input type="radio" name="q3" value="a">الشيخوخة <br>
+        <input type="radio" name="q3" value="b">الهرم <br>
+        <input type="radio" name="q3" value="c">كبير السن <br>
+        <input type="radio" name="q3" value="d">الكبر <br>
+    </div>
+    <div class="question">
+        <h1>اذا سقط الكبير في السن مغشيا عليه ماذا تفعل؟</h1>
+        <input type="radio" name="q4" value="a">اتركه و اهرب <br>
+        <input type="radio" name="q4" value="b"> احمله بخفه واتصل على الطوارئ <br>
+        <input type="radio" name="q4" value="c">اتصل بالطوارئ و لا افعل شيء <br>
+        <input type="radio" name="q4" value="d">احاول ايقاظه بعصبيه <br>
+    </div>
+    <div class="question">
+        <h1> لو عاملك الكبير بالسن بعصبيه ماذا تفعل؟ </h1>
+        <input type="radio" name="q5" value="a"> اظل صامت لا اتكلم معه <br>
+        <input type="radio" name="q5" value="b"> اتركه و اذهب بعيدا <br>
+        <input type="radio" name="q5" value="c"> اصرخ عليه و استفزه <br>
+        <input type="radio" name="q5" value="d"> احاول تهدأته بالكلام <br>
+    </div>
+    <button type="submit"  > النتيجة </button>
+
+    
+
+</form>
+</div>
+
+<footer>
+    <div class="footer-wrapper">
+        <div class="single-footer">
+            <h2>موقع رد الجميل</h2>
+            <p>يوفر الفرصه لمساعدهكبار السن 
+                و استرداد المساعده بعد فتره من الزمن
+                بحيث يتم تسجيل ساعات المساعده عندما تسجل الدخول
+            </p>
+        </div>
+        <div class="single-footer">
+            <h2>مواقع التواصل الاجتماعي</h2>
+            <ul  id="iconss">
+                <li>
+                    <a href="#">youtube</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">leav us comment</a>
+                </li>
+            </ul>
+        
+        </div>
+        <div class="single-footer">
+            <div class="footer-section cont-form">
+                <h2>contect us</h2>
+                <br>
+                <form action="./home.html" method="post">
+                <input type="email" name="email" class="text-input contact-input" placeholder="your email address....">
+                <textarea name="message" class="text-input contact-input" placeholder="your message....."></textarea>
+                <button type="submit" class="btn btn-big">
+                    <i class="fas fa-envelope"></i>
+                    send
+                </button>
+       
+             </form>
+             <!-- animattion -->
+             <div class="loader3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+             <!-- animattion -->
+        
+        </div>
+
+      
+
+    </div>
+    <div class="footer-bottom">
+        &copy; rad-AL-jammel.com | Designed by SARA SEBZALI
+    </div>
+</div>
+</footer>
+
+
+    
+</body>
+<script src="./loding.js"></script>
+<script src="./test.js"></script>
+</html>
+

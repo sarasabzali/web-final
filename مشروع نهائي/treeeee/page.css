@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.chart {
+    margin: 200px auto;
+    width: 600px;
+    height: 200px;
+
+}
+.para {
+    display: flex;
+}
